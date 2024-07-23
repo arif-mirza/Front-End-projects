@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: coral;
+}
+.conatiner{
+    background-color: #fff;
+    padding: 2rem;
+    border-radius:1rem ;
+    min-height: 30vh;
+    min-width: 40vh;
+
+}
+form{
+ margin: 2rem 3rem 2rem 2rem;
+}
+ form select,button,input{
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 1.5rem;
+ }
+ form input{
+    border: 2px solid lightgray;
+    font-size: 1rem;
+    height: 3rem;
+    padding-left:3rem ;
+ }
+
+ .dropdown{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    /* background-color: aqua; */
+ }
+ .select-container img{
+    max-width: 3rem;
+
+ }
+
+ .select-container{
+    display: flex;
+    width: 7rem;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid lightgray;
+    margin:4rem 1rem;
+    /* margin-bottom: rem; */
+    /* background-color: red; */
+
+    border-radius: 0.5rem;
+
+
+ }
+ .btn{
+    padding: 8px 20px;
+    width: 200px;
+    height: 50px;
+    color: black;
+    font-weight: 600;
+    border-radius: 5px;
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+ }
+ .btn::before{
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( 120deg , transparant , #1d1e1e , transparent);
+    transform: translateX(-100%);
+    transition: 0.9s;
+    position: absolute;
+}
+
+.btn:hover{
+    background: transparent;
+    box-shadow: 0 0 28px 5px #262828;
+}
